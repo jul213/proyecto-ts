@@ -3,7 +3,12 @@ enum listatareas {
     "tipo"  =  "A",
     "prioridad" = "maxima",
     "tiempo" = "1 hora"
-     }
+     };
 
 
-let lista = ["hola","sudo","ls","cd"]
+let lista = ["hola","sudo","ls","cd"];
+
+lista.forEach((elemento) => {
+    console.log(elemento);
+});
+
