@@ -4,3 +4,6 @@ enum listatareas {
     "prioridad" = "maxima",
     "tiempo" = "1 hora"
      }
+
+
+let lista = ["hola","sudo","ls","cd"]
