@@ -5,6 +5,14 @@ enum listatareas {
     "tiempo" = "1 hora"
      };
 
+type coche = {
+    nombre: string,
+    modelo: string,
+    matricula: string,
+    color: string,
+    ruedas: number
+} //types en ts
+
 
 let lista = ["hola","sudo","ls","cd"];
 
