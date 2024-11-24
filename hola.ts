@@ -45,3 +45,15 @@ let listaproductos: string[] = ["maquina", "cafe"];
 let listadomingo: string[] = [...listaproductos, "descansar", "variable"];
 let listamili: number[] = [20,50,30];
 let listasemana = [...listadomingo, ...listamili];
+
+let estadoAPP = {
+ usuario: "admin",
+ session: "sesion 1",
+ jwt: "autenticacion"
+}
+
+let nuevoEstado = {
+    ...estadoAPP,
+    sesion: 4
+
+} //propagacion en objetos
