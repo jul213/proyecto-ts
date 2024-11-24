@@ -18,4 +18,5 @@ for(const elemento in lista){
 
 for(let index = 0; index < lista.length; index++){
     const elemento = lista[index]; //for clasico en ts
+    console.log(`el indice de la lista actual ${index} y el elemento de la lista es ${elemento}`);
 }
