@@ -40,3 +40,8 @@ let tarea = {
 }
 
 let {nombre, asignacion, prioridad} = tarea; //propagacion
+
+let listaproductos: string[] = ["maquina", "cafe"];
+let listadomingo: string[] = [...listaproductos, "descansar", "variable"];
+let listamili: number[] = [20,50,30];
+let listasemana = [...listadomingo, ...listamili];
