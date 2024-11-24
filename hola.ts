@@ -32,3 +32,11 @@ while(indice < numero){
         indice++;
     }
 }
+
+let tarea = {
+    nombre: "tarea1",
+    asignacion: "matematicas",
+    prioridad: "alta"
+}
+
+let {nombre, asignacion, prioridad} = tarea; //propagacion
