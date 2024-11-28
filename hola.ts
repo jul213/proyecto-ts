@@ -67,7 +67,7 @@ let nuevoEstado = {
 } //propagacion en objetos
 
 
-function  hola(nombre?: string){
+function  hola(nombre?: string){ //parametro opcional  ?
     if  (nombre){
         console.log(`hola ${nombre}`);
     } else{
