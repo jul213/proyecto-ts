@@ -86,3 +86,12 @@ function ejemplo (nombre: string, apellidos: string){
 let  arrow = () => {
  console.log("funciones flecha");
 }
+
+
+function ejemplomultiple(...nombres: string[]){
+    nombres.forEach((nombre) => {
+        console.log(nombre);
+    })
+}
+
+ejemplomultiple("martin");
