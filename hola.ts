@@ -65,3 +65,12 @@ let nuevoEstado = {
     sesion: 4
 
 } //propagacion en objetos
+
+
+function  hola(nombre?: string){
+    if  (nombre){
+        console.log(`hola ${nombre}`);
+    } else{
+        console.log("hola");
+    }
+}
