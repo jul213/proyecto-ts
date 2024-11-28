@@ -75,5 +75,5 @@ function  hola(nombre?: string){ //parametro opcional  ?
     }
 }
 
-hola();  //
-hola("pablo");
+hola();  // output hola
+hola("pablo");  // output hola  pablo
