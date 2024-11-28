@@ -74,3 +74,6 @@ function  hola(nombre?: string){ //parametro opcional  ?
         console.log("hola");
     }
 }
+
+hola();  //
+hola("pablo");
