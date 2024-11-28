@@ -88,10 +88,10 @@ let  arrow = () => {
 }
 
 
-function ejemplomultiple(...nombres: string[]){
+function ejemplomultiple(...nombres: string[]){ // lista nombres tipo string
     nombres.forEach((nombre) => {
         console.log(nombre);
     })
 }
 
-ejemplomultiple("martin");
+ejemplomultiple("martin");  //paso de contenido a la lista
