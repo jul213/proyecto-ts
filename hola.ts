@@ -77,3 +77,7 @@ function  hola(nombre?: string){ //parametro opcional  ?
 
 hola();  // output hola
 hola("pablo");  // output hola  pablo
+
+let  arrow = () => {
+ console.log("funciones flecha");
+}
