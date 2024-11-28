@@ -78,6 +78,11 @@ function  hola(nombre?: string){ //parametro opcional  ?
 hola();  // output hola
 hola("pablo");  // output hola  pablo
 
+
+function ejemplo (nombre: string, apellidos: string){
+    return `${nombre} ${apellidos}`; //return en ts
+}
+
 let  arrow = () => {
  console.log("funciones flecha");
 }
