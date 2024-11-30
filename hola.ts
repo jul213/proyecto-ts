@@ -96,4 +96,15 @@ function ejemplomultiple(...nombres: string[]){ // lista nombres tipo string
 
 ejemplomultiple("martin");  //paso de contenido a la lista
 
-const empleado = (nombre) => console.log(`soy una funcion flecha ${nombre}`); // funcion flecha una linea
+const empleado = (nombre:  string) => console.log(`soy una funcion flecha ${nombre}`); // funcion flecha una linea
+
+empleado("juan");
+
+
+const tension = (args: string, impulso: () => `hola soy un impulso`) => {
+    if (args === "juan"){
+        return
+    } else {
+        impulso()
+    }
+} 
