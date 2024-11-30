@@ -169,4 +169,4 @@ console.log(generatorSaga.next().value); // (watcher)
 console.log(generatorSaga.next().value); // (worker)
 console.log(generatorSaga.next().value); // (worker)
 console.log(generatorSaga.next().value); // (worker)
-console.log(generatorSaga.next().value); // (watcher)
+console.log(generatorSaga.next().value); // (watcher
