@@ -107,4 +107,4 @@ const tension = (args: string, impulso: () => `hola soy un impulso`) => {
     } else {
         impulso()
     }
-} 
+} // funcion arrow con funcion anonima incorporada 
