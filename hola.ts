@@ -105,6 +105,29 @@ const tension = (args: string, impulso: () => `hola soy un impulso`) => {
     if (args === "juan"){
         return
     } else {
-        impulso()
+        impulso() //callback 
     }
 } // funcion arrow con funcion anonima incorporada 
+
+
+// Async 
+
+async function ejemploAsync(): Promise<void> {
+
+    await console.log("tarea  a completar en secuencia");
+
+};
+
+ejemploAsync().then((respuesta) => {
+    console.log("respuesta", respuesta);
+}).catch((error) => {
+    console.log("hay un  error", error);
+}).finally(() => "todo a terminado");
+
+
+//generators
+
+function ejemploGenerador() {
+
+    //yield
+}
