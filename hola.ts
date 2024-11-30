@@ -127,7 +127,28 @@ ejemploAsync().then((respuesta) => {
 
 //generators
 
-function ejemploGenerador() {
+function* ejemploGenerador() {
 
     //yield
+
+    let index = 0;
+
+    while(index< 5){
+        yield index++;
+    }
+}
+// guardamos funcion generadora
+let generadora = ejemploGenerador();
+
+//accedemos  a  los valores emitidos
+
+console.log(generadora.next().value) //0
+console.log(generadora.next().value) //1
+console.log(generadora.next().value) //2
+console.log(generadora.next().value) //3
+
+//worker 
+
+function* worker(){
+    
 }
