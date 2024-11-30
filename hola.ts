@@ -142,13 +142,27 @@ let generadora = ejemploGenerador();
 
 //accedemos  a  los valores emitidos
 
-console.log(generadora.next().value) //0
-console.log(generadora.next().value) //1
-console.log(generadora.next().value) //2
-console.log(generadora.next().value) //3
+console.log(generadora.next().value); //0
+console.log(generadora.next().value); //1
+console.log(generadora.next().value); //2
+console.log(generadora.next().value); //3
 
 //worker 
 
-function* worker(){
-    
+function* watcher(valor: number){
+
+    yield valor;
+
+    yield* worker(valor); //utiliza el  * para llamar a otra funcion
+    yield valor + 10; //emitimos  el valor  final
 }
+
+function* worker(valor: number){
+    yield valor + 1;
+    yield valor + 2;
+    yield valor + 3;
+}
+
+let  generatorSaga = watcher(0);
+
+console.log
