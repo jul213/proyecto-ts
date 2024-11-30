@@ -1,4 +1,4 @@
-import { deleteAllCookies, setCookie } from "cookies-utils"
+import { deleteAllCookies, getCookieValue, setCookie } from "cookies-utils"
 
 // persistencia  de  datos
 
@@ -31,5 +31,34 @@ const cookieOptions = {
 //seteamos la cookie
 setCookie(cookieOptions);
 
-//eliminar
+//leer una cookie
+let cookieLeida = getCookieValue("usuario");
+
+//eliminar todas las cookies
 deleteAllCookies();
+
+
+//clase temporizador
+
+class Temporizador {
+    
+    public terminar?: () => void;
+
+    public empezar(): void{
+        setTimeout(() => {
+            if(!this.terminar) return;
+
+            //cuando haya pasado el tiempo, se ejecutara la funcion
+            this.terminar();
+        }, 10000);
+    }
+}
+
+const miTemporizador: Temporizador = new Temporizador();
+
+miTemporizador.terminar = () => {
+    console.log("evento terminado");
+}
+
+//lanzamos el temporizador 
+miTemporizador.empezar();
