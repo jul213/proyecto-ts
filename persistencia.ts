@@ -71,4 +71,6 @@ delete mitemporizador.terminar;
 
 //extender de eventTarget
 
-class temporizador2 extends 
+class temporizador2 extends eventTarget {
+    //te deja heredar las propiedades de la clase eventTarget
+    {
