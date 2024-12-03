@@ -65,3 +65,6 @@ miTemporizador.empezar();
 
 //
 setInterval(() => console.log("TRACERT"), 1000); //imprimir tic cada segundo
+
+//eliminar la ejecucion de la funcion
+delete mitemporizador.terminar;
