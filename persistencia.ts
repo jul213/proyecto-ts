@@ -42,23 +42,35 @@ deleteAllCookies();
 
 class Temporizador {
     
-    public terminar?: () => void;
+    public terminar?: (tiempo: number) => void;
 
     public empezar(): void{
         setTimeout(() => {
             if(!this.terminar) return;
 
             //cuando haya pasado el tiempo, se ejecutara la funcion
-            this.terminar();
+            this.terminar(Date.now());
         }, 10000);
     }
 }
 
 const miTemporizador: Temporizador = new Temporizador();
 
-miTemporizador.terminar = () => {
-    console.log("evento terminado");
+miTemporizador.terminar = (tiempo: number) => {
+    console.log("evento terminado", tiempo);
 }
 
 //lanzamos el temporizador 
 miTemporizador.empezar();
+
+//
+setInterval(() => console.log("TRACERT"), 1000); //imprimir tic cada segundo
+
+//eliminar la ejecucion de la funcion
+delete mitemporizador.terminar;
+
+//extender de eventTarget
+
+class temporizador2 extends eventTarget {
+    //te deja heredar las propiedades de la clase eventTarget
+    {
