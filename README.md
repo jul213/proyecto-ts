@@ -1,2 +1,2 @@
 # repositorio-ts
-proyecto utilizando typescript y informativo sobre el mismo
+repositorio utilizando typescript y informativo sobre el mismo
