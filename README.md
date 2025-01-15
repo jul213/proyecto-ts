@@ -1,4 +1,4 @@
-# repositorio-ts
+# typescript
 repositorio utilizando typescript y informativo sobre el mismo y practicas
 
 ***
